@@ -1,0 +1,363 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2757
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-Bold;\f1\fnil\fcharset0 .SFNS-Regular;\f2\froman\fcharset0 TimesNewRomanPSMT;
+\f3\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;}
+{\colortbl;\red255\green255\blue255;\red14\green14\blue14;}
+{\*\expandedcolortbl;;\cssrgb\c6700\c6700\c6700;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww34000\viewh21380\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\b\fs30 \cf2 Employees Table:
+\f1\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f0\b emp_no
+\f1\b0 : 
+\f3 INT PRIMARY KEY NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Represents a unique employee number, used to identify each employee.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f0\b emp_title_id
+\f1\b0 : 
+\f3 VARCHAR(10) NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Refers to a job title identifier; it\'92s a string that may contain letters and digits.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	3.	
+\f0\b birth_date
+\f1\b0 : 
+\f3 DATE NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	The date of birth of the employee, in 
+\f3 YYYY-MM-DD
+\f1  format.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	4.	
+\f0\b first_name
+\f1\b0 : 
+\f3 VARCHAR(35) NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	The employee\'92s first name; string data.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	5.	
+\f0\b last_name
+\f1\b0 : 
+\f3 VARCHAR(35) NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	The employee\'92s last name; string data.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	6.	
+\f0\b sex
+\f1\b0 : 
+\f3 VARCHAR(1) NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Indicates the employee\'92s gender, typically 
+\f3 M
+\f1  or 
+\f3 F
+\f1 .\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	7.	
+\f0\b hire_date
+\f1\b0 : 
+\f3 DATE NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	The date the employee was hired, in 
+\f3 YYYY-MM-DD
+\f1  format.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b Keys
+\f1\b0 :\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b emp_no
+\f1\b0 : Primary key, uniquely identifying each employee.\
+	\'95	
+\f0\b emp_title_id
+\f1\b0 : A foreign key could be linked to a title in the 
+\f3 titles
+\f1  table.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+
+\f0\b\fs30 Departments Table:
+\f1\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f0\b dept_no
+\f1\b0 : 
+\f3 VARCHAR(8) PRIMARY KEY NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Represents a unique department number consisting of letters and digits.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f0\b dept_name
+\f1\b0 : 
+\f3 VARCHAR(40) NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	The name of the department; string data.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b Keys
+\f1\b0 :\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b dept_no
+\f1\b0 : Primary key, uniquely identifying each department.\
+	\'95	This table defines all department information.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+
+\f0\b\fs30 Salaries Table:
+\f1\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f0\b emp_no
+\f1\b0 : 
+\f3 INT PRIMARY KEY NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Refers to the employee number, linking to the 
+\f3 employees
+\f1  table.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f0\b salary
+\f1\b0 : 
+\f3 INT NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	The salary amount for the employee, represented as an integer.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b Keys
+\f1\b0 :\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b emp_no
+\f1\b0 : Primary key and a foreign key referencing the 
+\f3 employees
+\f1  table.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+
+\f0\b\fs30 Dept_Emp Table:
+\f1\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f0\b emp_no
+\f1\b0 : 
+\f3 INT NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Refers to the employee number, linking to the 
+\f3 employees
+\f1  table.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f0\b dept_no
+\f1\b0 : 
+\f3 VARCHAR(8) NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Refers to the department number, linking to the 
+\f3 departments
+\f1  table.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b Keys
+\f1\b0 :\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b emp_no, dept_no
+\f1\b0 : Composite primary key, uniquely identifying the relationship.\
+	\'95	
+\f0\b emp_no
+\f1\b0 : Foreign key referencing the 
+\f3 employees
+\f1  table.\
+	\'95	
+\f0\b dept_no
+\f1\b0 : Foreign key referencing the 
+\f3 departments
+\f1  table.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+
+\f0\b\fs30 Dept_Manager Table:
+\f1\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f0\b dept_no
+\f1\b0 : 
+\f3 VARCHAR(8) NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Refers to the department number, linking to the 
+\f3 departments
+\f1  table.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f0\b emp_no
+\f1\b0 : 
+\f3 INT NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Refers to the employee number, linking to the 
+\f3 employees
+\f1  table.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b Keys
+\f1\b0 :\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b emp_no, dept_no
+\f1\b0 : Composite primary key, uniquely identifying the relationship.\
+	\'95	
+\f0\b emp_no
+\f1\b0 : Foreign key referencing the 
+\f3 employees
+\f1  table.\
+	\'95	
+\f0\b dept_no
+\f1\b0 : Foreign key referencing the 
+\f3 departments
+\f1  table.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+
+\f0\b\fs30 Titles Table:
+\f1\b0\fs28 \
+\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	1.	
+\f0\b title_id
+\f1\b0 : 
+\f3 VARCHAR(10) PRIMARY KEY
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Represents a unique job title identifier.\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f2 \cf2 	2.	
+\f0\b title
+\f1\b0 : 
+\f3 VARCHAR(40) NOT NULL
+\f1 \
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	The title name or job position description.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b Keys
+\f1\b0 :\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b title_id
+\f1\b0 : Primary key to uniquely identify each title.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+
+\f0\b\fs30 Foreign Key Relationships:
+\f1\b0\fs28 \
+\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b emp_no
+\f1\b0  in 
+\f3 salaries
+\f1 , 
+\f3 dept_emp
+\f1 , and 
+\f3 dept_manager
+\f1  references 
+\f3 emp_no
+\f1  in the 
+\f3 employees
+\f1  table.\
+	\'95	
+\f0\b dept_no
+\f1\b0  in 
+\f3 dept_emp
+\f1  and 
+\f3 dept_manager
+\f1  references 
+\f3 dept_no
+\f1  in the 
+\f3 departments
+\f1  table.\
+	\'95	
+\f0\b emp_title_id
+\f1\b0  in 
+\f3 employees
+\f1  can reference a primary key in the 
+\f3 titles
+\f1  table.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+
+\f0\b\fs30 Data Type Justifications:
+\f1\b0\fs28 \
+\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f0\b INT
+\f1\b0 : Used for numeric fields like employee number and salary, which are integers without decimals.\
+	\'95	
+\f0\b VARCHAR
+\f1\b0 : Used for alphanumeric fields like employee names, department numbers, and titles, which can contain letters and numbers.\
+	\'95	
+\f0\b DATE
+\f1\b0 : Used for date-related fields (e.g., birth date, hire date, 
+\f3 from_date
+\f1 , 
+\f3 to_date
+\f1 ), stored in 
+\f3 YYYY-MM-DD
+\f1  format.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+}
